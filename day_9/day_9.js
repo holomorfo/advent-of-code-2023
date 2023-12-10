@@ -64,9 +64,8 @@ try {
     .map((e) => e.trim())
     .map((e) => e.split(' ').map(Number))
 
-    // console.log(lines)
-  // const part1 = lines.map(calculateSublists).reduce((a, b) => a + b)
-  // console.log(part1)
+  const part1 = lines.map(calculateSublists).reduce((a, b) => a + b)
+  console.log(part1)
   const part2 = lines.map(calculateSublistsBack).reduce((a, b) => a + b)
   console.log(part2)
 } catch (error) {
